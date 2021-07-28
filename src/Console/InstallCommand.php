@@ -50,7 +50,6 @@ class InstallCommand extends Command
     {
         return $this->choice('Which services would you like to install?', [
             'mysql',
-            'pgsql',
             'mariadb',
             'redis',
             'memcached',
