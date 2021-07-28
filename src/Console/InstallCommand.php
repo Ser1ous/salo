@@ -114,7 +114,7 @@ class InstallCommand extends Command
         if (file_exists(evo()->basePath('custom/.env'))) {
             $environment = file_get_contents(evo()->basePath('custom/.env'));
         } else {
-            $environment = file_get_contents(evo()->basePath('custom/.env.example'));
+            $environment = file_get_contents(evo()->basePath('custom/.env.docker.example'));
         }
 
         if (in_array('pgsql', $services)) {
