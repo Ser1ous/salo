@@ -25,3 +25,5 @@ RUN apt-get install -y \
         vim \
         wget \
         subversion
+
+ADD php.ini /usr/local/etc/php/conf.d/40-custom.ini
